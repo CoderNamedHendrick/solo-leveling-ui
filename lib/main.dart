@@ -13,12 +13,13 @@ class SoloLevelingApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.black,
+        primaryColor: Color(0xFF0A0A0A),
         accentColor: Color(0xFF7F00FF),
         textTheme: TextTheme(
           headline1: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 36,
+            color: Colors.white,
             fontWeight: FontWeight.w700,
             fontStyle: FontStyle.normal,
             wordSpacing: 2.0,
@@ -26,6 +27,7 @@ class SoloLevelingApp extends StatelessWidget {
           bodyText1: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 14,
+            color: Colors.white,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.normal,
           ),
