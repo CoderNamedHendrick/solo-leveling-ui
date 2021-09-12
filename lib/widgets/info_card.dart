@@ -27,7 +27,8 @@ class InfoCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(vertical: 4.0,
+            padding: EdgeInsets.symmetric(
+              vertical: 4.0,
               horizontal: 8.0,
             ),
             decoration: BoxDecoration(
