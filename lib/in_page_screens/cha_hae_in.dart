@@ -8,15 +8,32 @@ class ChaHaeIn extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Container(
         height: size.height,
         width: size.width,
+        padding: EdgeInsets.only(
+          left: 18.0,
+          right: 28.0,
+          top: 40,
+        ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(),
-            Container(),
+            Container(
+              height: 233,
+              width: size.width,
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(15.0),
+              ),
+            ),
+            Container(
+              height: 40,
+              width: 64.5,
+              color: Colors.pink,
+            ),
             Text(
               'Cha Hae-In',
               style: Theme.of(context).textTheme.headline2,
@@ -27,9 +44,15 @@ class ChaHaeIn extends StatelessWidget {
                   categoryTitle: 'Human',
                   categoryColor: Colors.greenAccent,
                 ),
+                SizedBox(
+                  width: 6.0,
+                ),
                 CategoryChip(
                   categoryTitle: 'S-Rank Hunter',
                   categoryColor: Colors.red,
+                ),
+                SizedBox(
+                  width: 6.0,
                 ),
                 CategoryChip(
                   categoryTitle: 'Blade Master',
@@ -37,24 +60,27 @@ class ChaHaeIn extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              width: size.width,
-              padding: EdgeInsets.symmetric(
-                vertical: 16.0,
-                horizontal: 6.0,
-              ),
-              decoration: BoxDecoration(
-                color: Color(0xFF171717),
-                border: Border(
-                  left: BorderSide(
-                    color: Theme.of(context).accentColor,
-                    width: 0.5,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8.5),
+              child: Container(
+                width: size.width,
+                padding: EdgeInsets.symmetric(
+                  vertical: 16.0,
+                  horizontal: 6.0,
+                ),
+                decoration: BoxDecoration(
+                  color: Color(0xFF171717),
+                  border: Border(
+                    left: BorderSide(
+                      color: Theme.of(context).accentColor,
+                      width: 0.8,
+                    ),
                   ),
                 ),
-              ),
-              child: Text(
-                'Are you really a hunter?',
-                style: Theme.of(context).textTheme.headline3,
+                child: Text(
+                  'Are you really a hunter?',
+                  style: Theme.of(context).textTheme.headline3,
+                ),
               ),
             ),
             Text(

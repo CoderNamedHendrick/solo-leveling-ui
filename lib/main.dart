@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solo_leveling/in_page_screens/cha_hae_in.dart';
+import 'package:solo_leveling/in_page_screens/igris.dart';
 
 void main() {
   runApp(
@@ -47,7 +48,7 @@ class SoloLevelingApp extends StatelessWidget {
           ),
         ),
       ),
-      home: ChaHaeIn(),
+      home: Igris(),
     );
   }
 }

@@ -11,12 +11,12 @@ class CategoryChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        vertical: 10.0,
+        vertical: 8.0,
         horizontal: 6.0,
       ),
       decoration: BoxDecoration(
         color: categoryColor,
-        borderRadius: BorderRadius.circular(16.0),
+        borderRadius: BorderRadius.circular(18.0),
       ),
       child: Text(
         '$categoryTitle',
