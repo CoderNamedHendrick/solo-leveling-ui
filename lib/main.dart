@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:solo_leveling/in_page_screens/igris.dart';
+import 'package:solo_leveling/in_page_screens/cha_hae_in.dart';
 
 void main() {
   runApp(
@@ -31,6 +31,13 @@ class SoloLevelingApp extends StatelessWidget {
             color: Colors.white,
             fontWeight: FontWeight.w700,
           ),
+          headline3: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 16,
+            color: Colors.white70,
+            fontWeight: FontWeight.w500,
+            fontStyle: FontStyle.italic,
+          ),
           bodyText1: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 14,
@@ -40,7 +47,7 @@ class SoloLevelingApp extends StatelessWidget {
           ),
         ),
       ),
-      home: IgrisPage(),
+      home: ChaHaeIn(),
     );
   }
 }
