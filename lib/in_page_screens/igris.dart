@@ -3,7 +3,6 @@ import 'package:solo_leveling/widgets/category_chip.dart';
 
 class Igris extends StatelessWidget {
   const Igris({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -78,7 +77,7 @@ class Igris extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Do not claimthe title of king with just... that much power',
+                  'Do not claim the title of king with just... that much power',
                   style: Theme.of(context).textTheme.headline3,
                 ),
               ),

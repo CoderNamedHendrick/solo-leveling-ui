@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solo_leveling/in_page_screens/cha_hae_in.dart';
 import 'package:solo_leveling/in_page_screens/igris.dart';
+import 'package:solo_leveling/in_page_screens/volume_one.dart';
+
+import 'in_page_screens/volume_two.dart';
 
 void main() {
   runApp(
@@ -20,7 +23,7 @@ class SoloLevelingApp extends StatelessWidget {
         textTheme: TextTheme(
           headline1: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 36,
+            fontSize: 34,
             color: Colors.white,
             fontWeight: FontWeight.w700,
             fontStyle: FontStyle.normal,
@@ -28,27 +31,34 @@ class SoloLevelingApp extends StatelessWidget {
           ),
           headline2: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 32,
+            fontSize: 30,
             color: Colors.white,
             fontWeight: FontWeight.w700,
           ),
           headline3: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 16,
+            fontSize: 14,
             color: Colors.white70,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.italic,
           ),
+          headline4: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 20,
+            color: Colors.white70,
+            fontWeight: FontWeight.w600,
+            fontStyle: FontStyle.normal,
+          ),
           bodyText1: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 14,
+            fontSize: 10,
             color: Colors.white,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.normal,
           ),
         ),
       ),
-      home: Igris(),
+      home: VolumeTwo(),
     );
   }
 }
